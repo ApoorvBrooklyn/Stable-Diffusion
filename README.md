@@ -1,27 +1,14 @@
----
-title: Stable Diffusion Implementation
-emoji: 🎨
-colorFrom: blue
-colorTo: purple
-sdk: gradio
-python_version: 3.9
----
+# pytorch-stable-diffusion
+PyTorch implementation of Stable Diffusion from scratch
 
-# Stable Diffusion Implementation
+## Download weights and tokenizer files:
 
-A custom implementation of Stable Diffusion from scratch.
+1. Download `vocab.json` and `merges.txt` from https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/tree/main/tokenizer and save them in the `data` folder
+2. Download `v1-5-pruned-emaonly.ckpt` from https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/tree/main and save it in the `data` folder
 
-## Setup
+## Tested fine-tuned models:
 
-```bash
-pip install -r requirements.txt
+Just download the `ckpt` file from any fine-tuned SD (up to v1.5).
 
-# Download the model weights
-wget -O v1-5-pruned-emaonly.ckpt "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
-```
-
-## Usage
-
-```python
-python demo.py
-```
+1. InkPunk Diffusion: https://huggingface.co/Envvi/Inkpunk-Diffusion/tree/main
+2. Illustration Diffusion (Hollie Mengert): https://huggingface.co/ogkalu/Illustration-Diffusion/tree/main
