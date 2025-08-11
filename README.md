@@ -1,3 +1,36 @@
+---
+language:
+  - en
+tags:
+  - stable-diffusion
+  - pytorch
+  - text-to-image
+  - image-to-image
+  - diffusion-models
+  - computer-vision
+  - generative-ai
+license: mit
+library_name: pytorch
+pipeline_tag: text-to-image
+base_model: stable-diffusion-v1-5
+model-index:
+  - name: pytorch-stable-diffusion
+    results:
+      - task:
+          type: text-to-image
+          name: Text-to-Image Generation
+        dataset:
+          type: custom
+          name: Stable Diffusion v1.5
+        metrics:
+          - type: inference_steps
+            value: 50
+          - type: cfg_scale
+            value: 8
+          - type: image_size
+            value: 512x512
+---
+
 # pytorch-stable-diffusion
 PyTorch implementation of Stable Diffusion from scratch
 
