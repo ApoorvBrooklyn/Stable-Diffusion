@@ -89,7 +89,7 @@ This implementation includes all the core components of Stable Diffusion:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/pytorch-stable-diffusion.git
+   git clone https://github.com/https://github.com/ApoorvBrooklyn/Stable-Diffusion
    cd pytorch-stable-diffusion
    ```
 
