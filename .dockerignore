@@ -1,0 +1,43 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/
+.mypy_cache/
+.pytest_cache/
+.hypothesis/
+
+.DS_Store
+*.DS_Store
+
+# Virtual environments
+myenv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Output images
+output.png
+*.png
+*.jpg
+*.jpeg
+
+# Large model files (will be downloaded at runtime)
+# data/v1-5-pruned-emaonly.ckpt

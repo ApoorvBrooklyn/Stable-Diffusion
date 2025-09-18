@@ -8,7 +8,7 @@ import torch
 DEVICE = "cpu"
 
 ALLOW_CUDA = False
-ALLOW_MPS = False
+ALLOW_MPS = True
 
 if torch.cuda.is_available() and ALLOW_CUDA:
     DEVICE = "cuda"
@@ -23,7 +23,7 @@ models = model_loader.preload_models_from_standard_weights(model_file, DEVICE)
 ## TEXT TO IMAGE
 
 # prompt = "A dog with sunglasses, wearing comfy hat, looking at camera, highly detailed, ultra sharp, cinematic, 100mm lens, 8k resolution."
-prompt = "A boy playing football with his teammates."
+prompt = "Dog surfing near beach wearing cap. Make sure image is highly REALISTIC and highly detailed"
 uncond_prompt = ""  # Also known as negative prompt
 do_cfg = True
 cfg_scale = 8  # min: 1, max: 14
